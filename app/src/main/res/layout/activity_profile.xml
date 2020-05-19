@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:background="@drawable/profile_activity">
+    <ImageView
+        android:id="@+id/visit_profile_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:src="@drawable/profile_image"
+        />
+    <TextView
+        android:id="@+id/visit_user_name"
+        android:layout_below="@+id/visit_profile_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:text="User Name"
+        android:textStyle="bold"
+
+        />
+    <TextView
+        android:id="@+id/visit_user_status"
+        android:layout_below="@+id/visit_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="25dp"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:text="Hey i am using chat app"
+
+        />
+    <Button
+        android:id="@+id/button_send_message_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/visit_user_status"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="65dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        android:background="@drawable/buttons"
+        android:text="Send Message"
+        android:textAllCaps="false"
+        />
+    <Button
+        android:id="@+id/button_decline_message_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_send_message_request"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible"
+        android:layout_marginRight="65dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        android:background="@drawable/buttons"
+        android:text="Cancel Chat Request"
+        android:textAllCaps="false"
+        />
+</RelativeLayout>
